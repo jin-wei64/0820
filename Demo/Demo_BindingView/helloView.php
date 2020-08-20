@@ -6,6 +6,6 @@
     <title>Lab</title>
 </head>
 <body>
-    <H1>Hello! <?= $viewBag->name ?></H1>
+    <H1>Hello! <?= $viewBag->name2 ?></H1>
 </body>
 </html>

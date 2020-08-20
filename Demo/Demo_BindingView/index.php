@@ -1,7 +1,7 @@
 <?php
 
 $viewBag = new stdClass();
-$viewBag->name = "Wolfgang Chien";
+$viewBag->name2 = "Wolfgang Chien";
 
 require_once("helloView.php");
 
