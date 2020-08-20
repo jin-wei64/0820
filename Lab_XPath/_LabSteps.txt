@@ -59,13 +59,15 @@ echo htmlspecialchars($pageContent);
 
 
 3.  以 DOMDocument, DOMXPath 解讀網頁內容
-
+//*[@id="Content_rptList_hlLink_0"]/div
+//*[@id="news_box3"]/div[2]/ul/li[1]
+//*[@id="news_box3"]/div[2]/ul/li[2]
 
 3-1 去除 echo htmlspecialchars($pageContent); 這行，
     換成下列寫法:
 
 $doc = new DOMDocument();
-libxml_use_internal_errors(true);
+libxml_use_internal_errors(true); //有錯誤繼續  
 $doc->loadHTML($pageContent);
 
 $xpath = new DOMXPath($doc);
