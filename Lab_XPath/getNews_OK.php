@@ -25,6 +25,7 @@ foreach ($a['records']['location'] as $i) {
     for($count=0;$count<3;$count++){
         echo $i["weatherElement"][0]["time"][$count]["parameter"]["parameterName"];
     }
+    
     echo "<br>";
    
 }
